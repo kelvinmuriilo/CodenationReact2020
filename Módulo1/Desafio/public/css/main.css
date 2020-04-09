@@ -1,0 +1,389 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+/*
+*Flexbox
+*/
+.header-hero .nav-hero{
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+	width: 75%;
+	
+}
+
+.header-hero .nav-list{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 40%;
+}
+
+.header-hero .area-hero{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 15%;	
+}
+
+.hero-conteudo .hero-list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 20%;
+	
+}
+
+
+/*
+* Estilo principal
+*/
+body{
+	font-family: "Montserrat", sans-serif;
+}
+
+a{
+	text-transform: none;
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+section{
+	background-color: rgb(242,242,242);
+}
+
+.header-hero{
+	padding: 1.5%;
+	height: 564px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url(../img/capa-madmax2.jpg), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)) no-repeat;
+	background-blend-mode: overlay;
+	background-size:100% 135%;
+	background-attachment: fixed;
+	position: relative;
+	color: white;
+}
+
+
+.header-hero .nav-hero .nav-list-item a{
+	font-size: 13px;
+	font-weight: bold;
+	text-transform:uppercase ; 
+}
+
+.nav-hero a {
+	color: white;
+	transition: linear 0.2s;
+}
+
+.nav-hero a:hover{
+	transition: linear 0.2s;
+	color:rgb(228,187,35);
+}
+
+.nav-hero .area-hero img{
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.nav-hero .area-hero h3{
+	font-size: 13px;
+}
+
+.hero-conteudo{
+	width: 75%;
+	height: 384px;
+	justify-content: space-between;
+}
+
+.hero-conteudo .hero-titulo{
+	margin-top: 9.1%;
+	margin-bottom: 0;
+	font-size: 68px;
+	text-transform: uppercase;
+}
+
+.hero-conteudo .hero-genero{
+	font-size: 13px;
+	justify-content: space-between;
+}
+
+.hero-informacao .data-informacao{
+	color: rgb(228,187,35);
+}
+
+.hero-conteudo .hero-list{
+	margin: 0;
+	padding:0;
+}
+
+.hero-conteudo .hero-list a{
+	color: white;
+	font-size: 13px;
+	transition: 0.2s;
+}
+
+.hero-conteudo .hero-list a:hover{
+	color: rgb(228,187,35);
+	transition: 0.2s;
+}
+
+.hero-botao{
+	display: block;
+	border-radius: 50px;
+	width: 20%;
+	padding: 15px;
+	background-color:rgb(228,187,35);
+	color:black;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 35px;
+	transition: 0.5s;
+}
+
+.hero-botao:hover{
+	background-color: rgb(168, 138, 24);
+	transition: 0.5s;
+}
+
+
+.catalogo{
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.container{
+	margin-top: 20px;
+	display: flex;
+	width: 100%;
+}
+
+.nav-catalogo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15px;
+	height: 72px;
+	margin-top: -10px;
+	padding-bottom: 0px;
+	width: 71%;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+
+}
+.nav-catalogo ul{
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-catalogo ul li{
+	padding: 19px 0;
+	margin: 20px 0;
+	overflow: auto;
+}
+
+.nav-catalogo ul li a{
+	color: rgb(228,187,35);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 13px;
+	transition: all 0.2s;
+}
+
+.nav-catalogo .item-menu-catalogo:hover{
+	transition: all 0,2s;
+	border-bottom: 1px solid rgb(228,187,35);
+}
+
+.container{
+	width: 75%;
+	justify-content: center;
+}
+
+.container ul.filme-lista{
+	padding: 20px;
+	margin-top: 0px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+}
+
+.filme-lista li.item-filme{
+	height: 440px;
+	width: 230px;
+	background-color: white;
+	margin-left: 0;
+	margin-bottom: 25px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);	
+}
+
+.filme-titulo, .filme-poster-info h3{
+	text-transform: uppercase;
+}
+
+.filme-poster img{
+	width: 230px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.filme-poster-info{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	margin-top: -345px;
+	width: 230px;
+	height: 340px;
+	visibility: visible;
+	position: relative;
+	background-color: rgba(0,0,0,0.6);
+	opacity: 0;
+	z-index: 1;
+	transition: all 0.4s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.item-filme:hover .filme-poster-info{
+	visibility: visible;
+	position: relative;
+	opacity: 1;
+	z-index: 2;
+	transition: all 0.4s;
+}
+
+.filme-titulo{
+	margin-top: 10px;
+	font-size: 13px;
+	position: relative;
+	margin-top: -5px;
+}
+
+.filme-titulo-poster-info{
+	font-size: 20px;
+	color: rgb(228,187,35);
+	text-align: center;
+}
+
+.filme-genero{
+	font-size: 12px;
+}
+
+.filme-poster-sinopse{
+	height: 10px;
+	padding: 10px;
+	overflow: inherit;
+}
+
+.filme-genero{
+	margin: 0;
+
+}
+.area-filme-nota{
+	margin-top: -10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.area-filme-nota i{
+	color: rgb(204,204,204);
+}
+
+.area-filme-genero{
+	width: 45%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.filme-genero, .filme-genero a{
+	color: rgb(228,187,35);
+}
+
+.filme-genero a:hover{
+	text-decoration: underline;
+}
+
+.filme-nota{
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+/*Icones*/
+
+.filme-poster-info i{
+	color: white;
+	font-size: 50px;
+	transition: all 0.2s;
+	text-align: center;
+}
+
+.filme-poster-info i:hover{
+	color: rgb(228,187,35);
+	transition: all 0.2s;
+}
+
+.area-filme-nota i{
+	font-size:25px;
+	cursor: pointer;
+}
+.area-filme-nota i:hover{
+	color: red;
+	transition: all 0.2s;
+}	
+
+.sinopse-genero .sinopse-genero-item{
+	font-size: 10px;
+	margin:0;
+}
+
+.rodape{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 28px 0 20px 0;
+	margin: 0  190px;
+}
+
+.rodape-area-redes-sociais{
+	display: flex;
+	width: 15%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.rodape-area-redes-sociais i{
+	color: rgb(186,186,186);
+	font-size: 25px;
+}
+
+.rodape-area-redes-sociais .fa-twitter:hover{
+	color: rgb(29,161,242);
+}
+
+.rodape-area-redes-sociais .fa-facebook-official:hover{
+	color: rgb(66,103,178)
+}
+
+.rodape-area-redes-sociais .fa-instagram:hover{
+	color: rgb(213,80,107);
+}
