@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+.container{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgb(250,250,250);
+}
+
+.topbar{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border-bottom: 1px solid rgba(0, 0, 0 ,0.1);
+	position: fixed;
+}
+.topbar .container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 8vh;
+	width: 700px;
+	background-color: #ffffff;
+}
+
+.topbar__logo{
+	display: block;
+	width: 100px;
+	padding-left: 10px;
+}
+
+.topbar__icon{
+	background-color: #ffffff;
+	border: none;
+	padding: 0 1em;
+}
+
+.stories{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	margin-top: 50px;
+	width: 700px;
+	padding: 15px 0;
+}
+
+
+
+.stories__imagem, .stories__imagem--new{
+	
+	border-radius: 100%;
+	width: 78px;
+	margin: 0;
+	padding: 0px;
+	margin-right: 10px;
+}
+
+.stories__imagem--new{
+	border: 4px solid rgb(207,36,106);
+}
+
+
+.feed{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.post{
+	width: 700px;
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0,.1);
+	background-color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.post__header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	padding: 10px;
+}
+
+.user{
+	display: flex;
+	align-items: center;
+	
+}
+
+.user__imagem{
+	width: 50px;
+	height: 50px;
+	height: auto;
+	border-radius: 100%;
+	padding-right: 10px;
+	
+}
+
+.user__name{
+	font-size: .8em;
+}
+
+.post__context{
+	border: none;
+	background-color: #fff;
+}
+
+.post__photo{
+	width: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.post__photo img{
+	width: 100%;
+}
+
+.interaction{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.interaction__btn{
+	font-size: 2em;
+	border: none;
+	background-color: #ffffff;
+}
+
+.liked{
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	background-color: rgb(242,242,242);
+}
+
+.liked__imagem img{
+	width: 30px;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+
+.liked__people{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+
+@media(max-width:700px){
+	.topbar{
+		width: 100%;
+	}
+	.topbar .container{
+		width: 100%;
+	}
+
+	.stories{
+		width: 90%;
+	}
+
+	.post{
+		width: 90%;
+	}
+}
