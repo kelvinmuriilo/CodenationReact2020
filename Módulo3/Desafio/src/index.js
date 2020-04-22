@@ -24,8 +24,7 @@ const fibonacci = () => {
 }
 
 const isFibonnaci = (num) => {
-    let lista = fibonacci();
-    return lista.some(element => element == num);
+    return fibonacci().some(element => element == num);
 }
 
 module.exports = {
