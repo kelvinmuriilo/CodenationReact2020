@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="1" time="3.289">
+  <testsuite name="Contacts APP" errors="0" failures="1" skipped="0" timestamp="2020-05-10T22:50:34" time="2.369" tests="4">
+    <testcase classname="Contacts APP Should render Contact component" name="Contacts APP Should render Contact component" time="0.032">
+    </testcase>
+    <testcase classname="Contacts APP Should render Contacts component" name="Contacts APP Should render Contacts component" time="0.031">
+      <failure>TypeError: Cannot read property &apos;length&apos; of undefined
+    at Contacts.render (C:\Users\Kelvin Murilo\codenation\react-13\src\components\Contacts.jsx:22:35)
+    at finishClassComponent (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:17160:31)
+    at updateClassComponent (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:17110:24)
+    at beginWork (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:18620:16)
+    at HTMLUnknownElement.callCallback (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:188:14)
+    at invokeEventListeners (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:193:27)
+    at HTMLUnknownElementImpl._dispatch (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:119:9)
+    at HTMLUnknownElementImpl.dispatchEvent (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\events\EventTarget-impl.js:82:17)
+    at HTMLUnknownElementImpl.dispatchEvent (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\nodes\HTMLElement-impl.js:30:27)
+    at HTMLUnknownElement.dispatchEvent (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-environment-jsdom\node_modules\jsdom\lib\jsdom\living\generated\EventTarget.js:157:21)
+    at Object.invokeGuardedCallbackDev (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:237:16)
+    at invokeGuardedCallback (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:292:31)
+    at beginWork$1 (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:23203:7)
+    at performUnitOfWork (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:22157:12)
+    at workLoopSync (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:22130:22)
+    at performSyncWorkOnRoot (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:21756:9)
+    at scheduleUpdateOnFiber (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:21188:7)
+    at updateContainer (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:24373:3)
+    at C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:24758:7
+    at unbatchedUpdates (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:21903:12)
+    at legacyRenderSubtreeIntoContainer (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:24757:5)
+    at Object.render (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:24840:10)
+    at C:\Users\Kelvin Murilo\codenation\react-13\node_modules\@testing-library\react\dist\pure.js:86:25
+    at batchedUpdates$1 (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom.development.js:21856:12)
+    at act (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\react-dom\cjs\react-dom-test-utils.development.js:929:14)
+    at render (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\@testing-library\react\dist\pure.js:82:26)
+    at Object.&lt;anonymous&gt; (C:\Users\Kelvin Murilo\codenation\react-13\src\__tests__\submit.test.js:29:27)
+    at Object.asyncJestTest (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-jasmine2\build\jasmineAsyncInstall.js:102:37)
+    at C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-jasmine2\build\queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-jasmine2\build\queueRunner.js:26:19)
+    at C:\Users\Kelvin Murilo\codenation\react-13\node_modules\jest-jasmine2\build\queueRunner.js:73:41</failure>
+    </testcase>
+    <testcase classname="Contacts APP Should render Filters component" name="Contacts APP Should render Filters component" time="0.01">
+    </testcase>
+    <testcase classname="Contacts APP Should render Topbar component" name="Contacts APP Should render Topbar component" time="0.004">
+    </testcase>
+  </testsuite>
+</testsuites>
